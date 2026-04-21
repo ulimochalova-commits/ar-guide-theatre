@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR-режим — гид театра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-title gold">AR-гид театра</span>
+          <span class="logo-subtitle">демонстрация webAR-сцены</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html">Главная</a>
+          <a href="master.html">Мастер и Маргарита</a>
+          <a href="ar.html" class="active">AR</a>
+        </nav>
+        <div class="header-actions">
+          <a href="master.html" class="btn btn-secondary">К спектаклю</a>
+          <a href="#" class="btn btn-primary" data-demo>Купить билет</a>
+        </div>
+        <button class="menu-toggle" aria-label="Меню" aria-expanded="false">☰</button>
+      </div>
+      <div class="mobile-panel">
+        <nav class="mobile-nav">
+          <a href="index.html">Главная</a>
+          <a href="master.html">Мастер и Маргарита</a>
+          <a href="ar.html">AR</a>
+        </nav>
+        <div class="mobile-actions">
+          <a href="master.html" class="btn btn-secondary">К спектаклю</a>
+          <a href="#" class="btn btn-primary" data-demo>Купить билет</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="ar-page-hero">
+      <div class="container">
+        <span class="eyebrow">демонстрационный режим</span>
+        <h1>AR-сцены<br>по QR-коду</h1>
+        <p>Выберите сцену, чтобы увидеть QR-код. Отсканируйте его камерой смартфона, чтобы открыть визуальный AR-контент в браузере.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 18px;">
+      <div class="container scan-grid">
+
+        <div class="card scan-card">
+          <div class="section-head" style="margin-bottom:18px;">
+            <h2>Выберите сцену</h2>
+            <p>Нажмите на одну из кнопок ниже, чтобы увидеть QR-код, ведущий к соответствующей AR-сцене.</p>
+          </div>
+
+          <div class="scene-buttons">
+            <button class="scene-btn active" data-scene="woland">
+              <span class="scene-btn-number">1</span>
+              <div>
+                <strong>Появление Воланда</strong>
+                <p>Мистическая сцена на Патриарших прудах</p>
+              </div>
+            </button>
+
+            <button class="scene-btn" data-scene="margarita">
+              <span class="scene-btn-number">2</span>
+              <div>
+                <strong>Полёт Маргариты</strong>
+                <p>Ночной полёт над городом</p>
+              </div>
+            </button>
+
+            <button class="scene-btn" data-scene="interview">
+              <span class="scene-btn-number">3</span>
+              <div>
+                <strong>Интервью с актёром</strong>
+                <p>Закулисье и живой рассказ о роли</p>
+              </div>
+            </button>
+          </div>
+
+          <p class="small-note" style="margin-top:22px;">
+            В реальной реализации QR-коды размещаются на афише, программке, в фойе или возле театральных объектов.
+          </p>
+        </div>
+
+        <div class="scan-results">
+
+          <div class="qr-display-card card">
+            <div class="card-body" style="text-align: center;">
+              <h2 class="serif" style="margin-bottom: 8px;" data-scene-title>Появление Воланда</h2>
+              <p class="small-note" style="margin-bottom: 22px;" data-scene-text>
+                Отсканируйте QR-код, чтобы увидеть атмосферную AR-сцену с образом Воланда, цитатой и переходом к материалам о персонаже.
+              </p>
+
+              <div class="qr-display">
+                <img
+                  id="qr-image"
+                  src="images/qr-woland.png"
+                  alt="QR-код — Сцена Воланда"
+                  class="qr-code-img"
+                />
+              </div>
+
+              <p class="small-note" style="margin-top: 18px;">
+                Наведите камеру смартфона на QR-код
+              </p>
+            </div>
+          </div>
+
+          <div class="card scan-card">
+            <div class="section-head" style="margin-bottom: 14px;">
+              <h2>Что откроется после сканирования</h2>
+            </div>
+            <ul class="ar-list" style="margin-bottom: 18px;">
+              <li>анимированный персонаж или символ</li>
+              <li>цитата, связанная с конкретной сценой</li>
+              <li>краткий аудиокомментарий</li>
+              <li>видеоинтервью с актёром</li>
+              <li>переход к странице спектакля</li>
+              <li>ссылка на билеты и другие показы</li>
+            </ul>
+            <div class="result-controls">
+              <a href="master.html" class="btn btn-primary">Вернуться к спектаклю</a>
+              <a href="index.html" class="btn btn-secondary">На главную</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong class="gold serif" style="font-size:1.3rem;">AR-режим</strong>
+        <span>Прототип webAR-сцены для театрального пространства</span>
+      </div>
+      <div>QR-код / визуальная сцена / переход к контенту</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

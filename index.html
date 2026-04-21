@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR-гид театра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-title gold">AR-гид театра</span>
+          <span class="logo-subtitle">мультимедийная webAR-платформа</span>
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="active">Главная</a>
+          <a href="#how">Как это работает</a>
+          <a href="#shows">Спектакли</a>
+          <a href="master.html">Мастер и Маргарита</a>
+          <a href="ar.html">AR</a>
+        </nav>
+        <div class="header-actions">
+          <a href="master.html" class="btn btn-secondary">Открыть гид</a>
+          <a href="ar.html" class="btn btn-primary">Сканировать AR-код</a>
+        </div>
+        <button class="menu-toggle" aria-label="Меню" aria-expanded="false">☰</button>
+      </div>
+      <div class="mobile-panel">
+        <nav class="mobile-nav">
+          <a href="index.html">Главная</a>
+          <a href="#how">Как это работает</a>
+          <a href="#shows">Спектакли</a>
+          <a href="master.html">Мастер и Маргарита</a>
+          <a href="ar.html">AR</a>
+        </nav>
+        <div class="mobile-actions">
+          <a href="master.html" class="btn btn-secondary">Открыть гид</a>
+          <a href="ar.html" class="btn btn-primary">Сканировать AR-код</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">цифровое сопровождение театрального репертуара</span>
+          <h1>Погружение в спектакль<br>ещё <span class="gold">до начала</span> показа</h1>
+          <p>
+            AR-гид театра объединяет сайт с текстовыми, аудио- и видеоматериалами
+            и webAR-механику, которая активируется при сканировании QR-кодов
+            в театральном пространстве.
+          </p>
+          <div class="hero-actions">
+            <a href="master.html" class="btn btn-primary">Открыть пилотный гид</a>
+            <a href="ar.html" class="btn btn-secondary">Перейти в AR-режим</a>
+          </div>
+          <p class="hero-note">
+            Пилотный кейс — <strong>«Мастер и Маргарита»</strong>.
+            В дальнейшем платформа масштабируется на другие постановки репертуара.
+          </p>
+        </div>
+        <div class="hero-poster">
+          <div class="poster-moon"></div>
+          <div class="poster-content">
+            <div class="poster-badge">пилотный спектакль</div>
+            <h2 class="poster-title">Мастер<br>и Маргарита</h2>
+            <p class="poster-text">
+              Мистический, многослойный и визуально насыщенный мир,
+              наиболее подходящий для апробации webAR-сценариев.
+            </p>
+            <div class="poster-meta">
+              <span>текст + аудио + видео</span>
+              <span>AR по QR-кодам</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">модель пользовательского пути</span>
+          <h2>Как работает платформа</h2>
+          <p>
+            AR-гид строится как двухуровневая система: сайт выступает основной средой
+            доступа к контенту, а AR-слой дополняет его визуальными сценами через QR-коды.
+          </p>
+        </div>
+        <div class="grid-3">
+          <article class="card info-card">
+            <div class="card-body">
+              <div class="number-badge">1</div>
+              <h3>До спектакля</h3>
+              <p>Зритель открывает страницу постановки, смотрит трейлер, знакомится с персонажами и режиссёрской концепцией.</p>
+            </div>
+          </article>
+          <article class="card info-card">
+            <div class="card-body">
+              <div class="number-badge">2</div>
+              <h3>В театре</h3>
+              <p>QR-коды на афише, в программке, фойе или возле костюмов запускают AR-сцены и дополнительные материалы.</p>
+            </div>
+          </article>
+          <article class="card info-card">
+            <div class="card-body">
+              <div class="number-badge">3</div>
+              <h3>После спектакля</h3>
+              <p>Платформа сохраняет контакт со зрителем через постспектакльные комментарии, разбор символики и рекомендации.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="shows">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">структура репертуарной платформы</span>
+          <h2>Спектакли в системе AR-гида</h2>
+          <p>Пилот разрабатывается на материале «Мастера и Маргариты», архитектура сервиса проектируется как масштабируемая на весь репертуар.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card show-card">
+            <div class="show-cover">
+              <img src="images/master-cover.jpg" alt="Мастер и Маргарита" />
+              <div class="show-cover-overlay"></div>
+              <span class="show-tag">пилот</span>
+              <div class="show-title-wrap">
+                <h3>Мастер и Маргарита</h3>
+                <p>мистическая драма / webAR-маршрут</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="show-meta">
+                <span>16+</span>
+                <span>аудио и видео</span>
+                <span>AR-сцены</span>
+              </div>
+              <p class="show-text">Тестовый кейс, на котором апробируются ключевые функции: карточки персонажей, визуальные сцены, мультимедиа и маршрут вовлечения.</p>
+              <div class="show-actions">
+                <a href="master.html" class="btn btn-primary">Открыть страницу</a>
+                <a href="ar.html" class="btn btn-secondary">Открыть AR</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card show-card">
+            <div class="show-cover">
+              <img src="images/revisor-cover.jpg" alt="Ревизор" />
+              <div class="show-cover-overlay"></div>
+              <span class="show-tag">в перспективе</span>
+              <div class="show-title-wrap">
+                <h3>Ревизор</h3>
+                <p>классическая комедия / адаптируемый контент</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="show-meta">
+                <span>12+</span>
+                <span>текстовый маршрут</span>
+              </div>
+              <p class="show-text">Пример адаптации единой цифровой структуры для классического репертуара с другой визуальной логикой.</p>
+              <div class="show-actions">
+                <a href="#" class="btn btn-ghost" data-demo>Подробнее</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card show-card">
+            <div class="show-cover">
+              <img src="images/groza-cover.jpg" alt="Гроза" />
+              <div class="show-cover-overlay"></div>
+              <span class="show-tag">масштабирование</span>
+              <div class="show-title-wrap">
+                <h3>Гроза</h3>
+                <p>драма А. Н. Островского / классический репертуар</p>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="show-meta">
+                <span>14+</span>
+                <span>текст и аудио</span>
+              </div>
+              <p class="show-text">Пример адаптации AR-гида для классической русской драматургии с акцентом на символику и режиссёрскую интерпретацию.</p>
+              <div class="show-actions">
+                <a href="#" class="btn btn-ghost" data-demo>Подробнее</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ar-band">
+      <div class="container">
+        <div class="ar-wrap">
+          <div>
+            <span class="eyebrow">дополненная реальность без приложения</span>
+            <h2>webAR через QR-коды в театральном пространстве</h2>
+            <p>QR-код открывает AR-сцену прямо в браузере смартфона. Метки могут быть размещены на афишах, программках, в фойе и на театральных объектах.</p>
+            <ul class="ar-list">
+              <li>AR-персонажи и визуальные символы</li>
+              <li>костюмы и атмосферные вставки</li>
+              <li>видеофрагменты и цитаты</li>
+              <li>переход к покупке билета</li>
+            </ul>
+            <a href="ar.html" class="btn btn-primary">Открыть страницу AR</a>
+          </div>
+          <div class="phone-shell">
+            <div class="phone-screen">
+              <div class="scan-chip">AR-сцена активна</div>
+              <div class="ar-figure">
+                <div>
+                  <div class="figure-orb"></div>
+                  <div class="figure-label">Символический<br>мир спектакля</div>
+                </div>
+              </div>
+              <div class="phone-footer">
+                <span>камера</span>
+                <span>контент</span>
+                <span>билеты</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <strong class="gold serif" style="font-size:1.3rem;">AR-гид театра</strong>
+        <span>Прототип мультимедийной webAR-платформы для продвижения репертуара</span>
+      </div>
+      <div>Главная / Страница спектакля / AR-режим</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
